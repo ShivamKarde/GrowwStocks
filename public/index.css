@@ -1,0 +1,121 @@
+/* .card {
+    background-color: red;
+    border-radius: 10%;
+    height: 100px;
+    width: 100px; 
+    padding: 10px;
+} */
+
+
+.about {
+  border: 1px solid #CCCCCC;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.aboutdesc {
+  padding-top: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 180px;
+    overflow: hidden; /* Hides overflowing content */
+    white-space: nowrap; /* Prevents text from wrapping */
+    text-overflow: ellipsis; /* Adds ellipsis (...) to indicate text overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .cardscontainer {
+    margin-top: 60px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 230px)
+  }
+  .details {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 80px;
+    padding-left: 150px;
+    padding-right:150px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .dropdown {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .entry {
+    border: 1px solid rgb(151, 148, 148);
+  }
+
+  .line {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    height: 1px; /* Adjust thickness of the line as needed */
+    background-color: #CCCCCC; /* Adjust color of the line as needed */
+  }
+
+  .maindetails {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 10px 10px;
+  }
+
+  .navbar {
+    background-color: rgb(131, 64, 64);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    width: 100%;
+    height: 50px;
+  }
+
+  .searchbar {
+    display: inline-block;
+    margin-left: 200px;
+  }
+  
+  .searchbar input{
+    height: 30px;
+    width: 300px;
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 20%;
+  }
+  .ticker {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  .heading {
+    margin-top: 5px;
+    display: inline-block;
+    margin-left: 20px;
+    color: white;
+    padding-top: 5px;
+    font-size: 1.3em;
+  }
+  
+  .price, .chnge {
+    font-size: 15px;
+    margin: 5px 0;
+  }
+  
+
+
+
