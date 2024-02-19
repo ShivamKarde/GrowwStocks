@@ -1,6 +1,5 @@
 import React from "react";
 import Cards from "./components/Cards/Cards";
-import Temp from "./components/Temp/Temp";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CardDetails from "./components/CardDetails/CardDetails";

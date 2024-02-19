@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { getCardDetails, currentPrice } from "../../api";
-import { useParams, useHistory } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 
 function CardDetails(){
