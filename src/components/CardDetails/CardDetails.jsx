@@ -30,18 +30,18 @@ function CardDetails(){
                 <div>
                     <div className="maindetails">
                         <div className="logoname">
-                            <p>{details.Name}</p>
-                            <p>{details.Symbol}, {details.AssetType}</p>
-                            <p>{details.Exchange}</p>
+                            <p className="comname">{details.Name}</p>
+                            <p className="sym">{details.Symbol}, {details.AssetType}</p>
+                            <p className="sym">{details.Exchange}</p>
                         </div>
                         <div className="pricechnge">
                             {metrics ? (
                                 <div>
-                                    <p>{metrics["05. price"]}</p>
-                                    <p>{metrics["09. change"]}</p>
+                                    <p>${metrics["05. price"]}</p>
+                                    <p className="perchnge" >{metrics["10. change percent"]}</p>
                                 </div>
                             ): 
-                            <p>Loading</p>}
+                            <div className="loading-spinner"></div>}
                         </div>  
                     </div>
 
@@ -57,10 +57,9 @@ function CardDetails(){
                     </div>
 
                 </div>
-            ) : <p>Loading</p>}
+            ) : <div className="loading-spinner"></div>}
         </div>
     );
-
 }
 
 export default CardDetails;

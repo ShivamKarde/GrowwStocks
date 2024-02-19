@@ -27,7 +27,7 @@ function Cards(){
                 />);
             })
             ) : (
-                <p>Loading</p>
+                <div className="loading-spinner"></div>
             )}
         </div>
     );

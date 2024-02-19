@@ -6,18 +6,44 @@
     padding: 10px;
 } */
 
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite; /* Animation for spinning effect */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 .about {
   border: 1px solid #CCCCCC;
   position: relative;
+  width: 100%;
+  min-height: 400px;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */
 }
 
 .aboutdesc {
-  padding-top: 20px;
+  padding-top: 15px;
+  margin:0;
+  color:#6d6d6d;
+}
+
+.aboutheading {
+  padding-top: 4px;
 }
 
 .card {
@@ -38,8 +64,15 @@
     display: grid;
     grid-template-columns: repeat(4, 230px)
   }
+
+  .comname {
+    font-size: larger;
+  }
+
   .details {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     padding-top: 80px;
     padding-left: 150px;
     padding-right:150px;
@@ -60,11 +93,15 @@
 
   .line {
     position: absolute;
-    top: 15%;
+    top: 13%;
     left: 0;
     width: 100%;
     height: 1px; /* Adjust thickness of the line as needed */
     background-color: #CCCCCC; /* Adjust color of the line as needed */
+  }
+
+  .logoname p {
+    margin: 5px;
   }
 
   .maindetails {
@@ -76,13 +113,32 @@
   }
 
   .navbar {
-    background-color: rgb(131, 64, 64);
+    background-color: #994D1C;
     position: fixed;
     display: flex;
     flex-direction: row;
     top: 0;
     width: 100%;
     height: 50px;
+  }
+
+  .perchnge {
+    color: green;
+  }
+
+  .pricechnge {
+    margin-bottom: 20px;
+  }
+
+  .pricechnge p {
+    margin: 5px;
+  }
+
+
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
   }
 
   .searchbar {
@@ -93,9 +149,13 @@
   .searchbar input{
     height: 30px;
     width: 300px;
-    background-color: white;
+    background-color: #7c331b;
     margin-top: 5px;
-    border-radius: 20%;
+    border-radius: 15px;
+  }
+
+  .sym {
+    color: #6d6d6d;
   }
   .ticker {
     font-size: 10px;

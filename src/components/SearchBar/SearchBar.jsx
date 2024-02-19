@@ -21,7 +21,7 @@ function SearchBar() {
 
     function handleClick(event){
         console.log(event);
-        navigate(`/card/${event.target.value}`);
+        navigate(`/card/${event.target.id}`);
     }
 
     return (

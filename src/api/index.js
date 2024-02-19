@@ -2,8 +2,9 @@ import axios from "axios";
 
 const API = axios.create({baseURL : "https://www.alphavantage.co"});
 
+
 export const getGainersLosers = async() => {
-    const data = await API.get('/query?function=TOP_GAINERS_LOSERS&apikey=B7ML5JW2GAH01Z3D');
+    const data = await API.get(`/query?function=TOP_GAINERS_LOSERS&apikey=B7ML5JW2GAH01Z3D`);
     return data;
 }
 
